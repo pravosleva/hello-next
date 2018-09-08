@@ -32,7 +32,7 @@ class Home extends React.Component {
 
     return (
       <div>
-        <h1>fetchDataTest {shows.lenght}</h1>
+        <h1>fetchDataTest {shows.length}</h1>
         {
           shows
           ? (
