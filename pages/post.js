@@ -8,7 +8,8 @@ class Page extends React.Component {
 
   componentDidMount() {
     const id = this.props.router.query.id;
-    console.log(this.props);
+    // const id = this.props.url
+    // console.log(this.props.url.pathname);
     Page.getInitialProps(id, (show) => this.setState({ show }));
   }
 
