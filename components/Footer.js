@@ -1,13 +1,20 @@
-import React from 'react';
-import Link from 'next/link'
+import React, { Fragment } from 'react';
+import Link from 'next/link';
+import styled from 'styled-components';
 
+
+const Wrapper = styled('div')`
+  padding-top: 20px;
+  text-align: center;
+  color: #666;
+`;
 
 class Footer extends React.Component {
   render() {
     return (
-      <div style={{ textAlign: 'center', color: '#666', paddingTop: '10px' }}>
+      <Wrapper>
         Footer
-      </div>
+      </Wrapper>
     )
   }
 };

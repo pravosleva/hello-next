@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import styled from 'styled-components';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -14,26 +15,36 @@ const layoutStyle = {
   flexDirection: 'column',
   justifyContent: 'space-between',
 };
+const ContentWrapper = styled('div')`
+  min-height: 300px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 0 auto 0 auto;
+`;
 
 const withAppLayout = (ComposedComponent) => {
   class AppLayout extends Component {
     render() {
       return (
-        <div>
+        <Fragment>
           <style jsx global>{`
             body {
               margin: 0;
               color: #333;
+              font-family: 'Montserrat', sans-serif;
             }
           `}</style>
           <section style={layoutStyle}>
             <Header />
-            <div style={{ minHeight: '300px', boxShadow: '2px 2px 5px gray', padding: '20px' }}>
+            <ContentWrapper>
               <ComposedComponent {...this.props} />
-            </div>
+            </ContentWrapper>
             <Footer />
           </section>
-        </div>
+        </Fragment>
       );
     }
   }

@@ -3,6 +3,8 @@ import withAppLayout from '../components/AppLayout';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
 
 class Home extends React.Component {
   state = { shows: [] }
