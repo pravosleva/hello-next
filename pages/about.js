@@ -4,7 +4,10 @@ import withAppLayout from '../components/AppLayout';
 
 
 const About = () => (
-  <div>About</div>
+  <div>
+    <h1>About</h1>
+    <p>Next.js experience</p>
+  </div>
 );
 
 export default withAppLayout(About);

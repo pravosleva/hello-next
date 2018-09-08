@@ -23,11 +23,12 @@ const withAppLayout = (ComposedComponent) => {
           <style jsx global>{`
             body {
               margin: 0;
+              color: #333;
             }
           `}</style>
           <section style={layoutStyle}>
             <Header />
-            <div style={{ minHeight: '300px', boxShadow: '2px 2px 5px gray', padding: '10px' }}>
+            <div style={{ minHeight: '300px', boxShadow: '2px 2px 5px gray', padding: '20px' }}>
               <ComposedComponent {...this.props} />
             </div>
             <Footer />

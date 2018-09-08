@@ -9,12 +9,15 @@ const linkStyle = {
 class Header extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ paddingBottom: '10px' }}>
         <Link href="/">
           <a style={linkStyle}>Home</a>
         </Link>
         <Link href="/about">
           <a style={linkStyle}>About</a>
+        </Link>
+        <Link href="/fetchDataTest">
+          <a style={linkStyle}>fetchDataTest</a>
         </Link>
       </div>
     );
