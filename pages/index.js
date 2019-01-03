@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
-import withAppLayout from '../components/AppLayout';
 import Link from 'next/link';
+
+import withAppLayout from '../components/withAppLayout';
 
 
 const Home = () => (

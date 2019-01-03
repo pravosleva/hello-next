@@ -1,6 +1,7 @@
 // import Layout from '../components/MyLayout';
 import React, { Fragment } from 'react';
-import withAppLayout from '../components/AppLayout';
+
+import withAppLayout from '../components/withAppLayout';
 
 
 const About = () => (

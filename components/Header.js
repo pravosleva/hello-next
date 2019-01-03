@@ -4,10 +4,12 @@ import styled from 'styled-components';
 
 
 const linkStyle = {
-  marginRight: 15
+  marginRight: 15,
 };
 const Wrapper = styled('div')`
-  padding-bottom: 20px;
+  border: none;
+  display: flex;
+  padding: 10px;
 `;
 
 class Header extends React.Component {

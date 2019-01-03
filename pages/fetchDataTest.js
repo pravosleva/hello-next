@@ -1,9 +1,10 @@
 import React, { Fragment } from 'react';
-import withAppLayout from '../components/AppLayout';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+
+import withAppLayout from '../components/withAppLayout';
 
 
 class Home extends React.Component {

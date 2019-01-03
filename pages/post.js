@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import {withRouter} from 'next/router';
-import withAppLayout from '../components/AppLayout';
+
+import withAppLayout from '../components/withAppLayout';
 
 
 class Page extends React.Component {

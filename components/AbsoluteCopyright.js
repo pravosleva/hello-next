@@ -4,19 +4,24 @@ import styled from 'styled-components';
 
 
 const Wrapper = styled('div')`
-  padding-top: 20px;
   text-align: center;
   color: #666;
+
+  display: block;
+  position: absolute;
+  right: 0; bottom: 0;
+
+  opacity:: 0.5;
 `;
 
-class Footer extends React.Component {
+class AbsoluteCopyright extends React.Component {
   render() {
     return (
       <Wrapper>
-        Footer
+        AbsoluteCopyright
       </Wrapper>
     )
   }
 };
 
-export default Footer;
+export default AbsoluteCopyright;
