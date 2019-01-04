@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import {withRouter} from 'next/router';
+import ReactHtmlParser from 'react-html-parser';
 
 import withAppLayout from '../components/withAppLayout';
 
@@ -24,6 +25,7 @@ class Page extends React.Component {
     // const id = this.props.router.query.id;
     // const params = new URLSearchParams(this.props.router.asPath.slice(1));
     const id = this.props.router.asPath.slice(1).split('/')[1]; // 2nd element
+
     Page.getInitialProps(id, (show) => this.setState({ show }));
   }
 
@@ -37,10 +39,11 @@ class Page extends React.Component {
           show ?
           <div>
             <h1>{show.name}</h1>
-            <p>{show.summary.replace(/<[/]?p>/g, '')}</p>
-            <img src={show.image.medium}/>
+            {/* <p>{show.summary.replace(/<[/]?p>/g, '')}</p> */}
+            {ReactHtmlParser(show.summary)}
+            <img src={show.image.medium} />
           </div>
-          : <code>show is {String(show)}</code>
+          : <em>show is {String(show)}</em>
         }
       </div>
     )

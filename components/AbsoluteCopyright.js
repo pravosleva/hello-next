@@ -11,7 +11,7 @@ const Wrapper = styled('div')`
   position: absolute;
   right: 0; bottom: 0;
 
-  opacity:: 0.5;
+  opacity: 0.5;
 `;
 
 class AbsoluteCopyright extends React.Component {
